@@ -1,0 +1,29 @@
+body{
+    width: 50%;
+}
+.head_resume{
+    text-align: center;
+}
+i{
+    height: 30px;
+    width: 30px;
+}
+ol li span{
+    font-style: italic;
+    text-decoration-line: underline;
+}
+ol li b{
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-family:'Times New Roman';
+}
+table, tr, th{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+
+}
