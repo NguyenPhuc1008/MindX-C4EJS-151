@@ -1,0 +1,85 @@
+.game-container{
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.game-container-content{
+    background-color: rgb(249, 251, 252);
+    width: 100%;
+    height: 700px;
+    position: relative;
+    padding: 30px;
+}
+.game-container-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px 200px 0px 200px;
+   
+}
+.game-container-top-img{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #333;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.game-container-top-img img{
+    width: 100px;
+}
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 60px;
+}
+.controls button{
+    background-color: rgb(104, 224, 104);
+    height: 50px;
+    width: 100px;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.bettingPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+.betOption{
+    display: flex;
+    border: 1px solid #333;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    position: relative;
+
+}
+.betOption img{
+    width: 100px;
+    height: 100px;
+}
+.betOption p{
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+
+}
+#maxBet{
+    display: none;
+}

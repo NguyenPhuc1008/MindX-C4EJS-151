@@ -17,11 +17,11 @@
         <div class="menu">
             <li><a href="index.html">TRANG CHỦ</a></li>
             <li><a href="">SẢN PHẨM</a>
-                <!-- <ul class="sub_menu">
+                <ul class="sub_menu">
                     <li><a href="">Hàng mới về</a></li>
                     <li><a href="">Collection</a></li>
-                    <li><a href="">Áo</a> -->
-                        <!-- <ul>
+                    <li><a href="">Áo</a>
+                        <ul>
                             <li><a href="">Áo sơ mi</a></li>
                             <li><a href="">Áo thun</a></li>
                             <li><a href="">Áo vest</a></li>
@@ -36,7 +36,7 @@
                             <li><a href="">Quần dài</a></li>
                         </ul>
                     </li>
-                </ul> -->
+                </ul>
             </li>
             <li><a href="">SALE</a></li>
             <li><a href="">BỘ SƯU TẬP</a></li>
@@ -46,115 +46,116 @@
         <div class="others">
             <li><input type="text" placeholder="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></li>
             <li><a href=""></a><i class="fa-solid fa-user"></i></a></li>
-            <li><a href=""></a><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href=""></a><i class="fa-solid fa-bag-shopping"></i></a></li>
         </div>
     </header>
-    <section class="cartegory">
+    <section class="delivery">
         <div class="container">
-            <div class="cartegory-top row">
-                <p>Trang chu</p> <span>&#10230;</span>
-                <p> Ao</p>
+            <div class="delivery-top-warp">
+                <div class="delivery-top">
+                    <div class="delivery-top-cart delivery-top-item">
+                        <i class="fa-solid fa-bag-shopping "></i>
+                    </div>
+                    <div class="delivery-top-location delivery-top-item">
+                        <i class="fa-solid fa-location-dot "></i>
+                    </div>
+                    <div class="delivery-top-money delivery-top-item">
+                        <i class="fa-solid fa-money-bill "></i>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="cartegory-left">
-                    <ul>
-                        <li class="cartegory-left-li "><a href="#">ÁO</a>
-                            <ul>
-                                <li><a href="">Áo thun</a></li>
-                                <li><a href="">Áo sơ mi</a></li>
-                            </ul>
-                        </li>
-                        <li class="cartegory-left-li "><a href="#">QUẦN</a>
-                            <ul>
-                                <li><a href="">Quần jean</a></li>
-                                <li><a href="">Quần tây</a></li>
-                            </ul>
-                        </li>
-                        <li class="cartegory-left-li"><a href="#">GIÀY</a></li>
-                        <li class="cartegory-left-li"><a href="#">NÓN</a></li>
-                    </ul>
+            <div class="delivery-content row">
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+                    <div class="delivery-content-left-login row">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p>Đăng nhập (Nếu bạn đã có tài khoản)</p>
+                    </div>
+                    <div class="delivery-content-left-guest row">
+                        <input type="radio" name="loaiKhach" value="khachle" checked>
+                        <p><span style="font-weight: bold;">Khách lẻ</span> (Nếu bạn không lưu lại thông tin)</p>
+                    </div>
+                    <div class="delivery-content-left-register row">
+                        <input type="radio" name="loaiKhach" value="khachle">
+                        <p><span style="font-weight: bold;">Đăng ký</span> (Tạo mới tài khoản với thông tin bên dưới)
+                        </p>
+                    </div>
+                    <div class="delivery-content-left-input-top row">
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Họ tên: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Điện thoại: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Tỉnh/Tp: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Quận/Huyện: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="delivery-content-left-input-bottom">
+                        <div class="delivery-content-left-input-bottom-item">
+                            <label for="">Phường/Xã: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-bottom-item">
+                            <label for="">Địa chỉ: <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="delivery-content-left-button row">
+                        <a href=""><span>&#171;</span>
+                            <p>Quay lại giỏ hàng</p>
+                        </a>
+                        <button onclick="location_payment()">Thanh Toán & Giao Hàng</button>
+                    </div>
+
+
                 </div>
-                <div class="cartegory-right row">
-                    <div class="cartegory-right-top-item">
-                        <p>TẤT CẢ SẢN PHẨM</p>
-                    </div>
-                    <div class="cartegory-right-top-item">
-                        <button><span>Bộ lọc</span><i class="fa-solid fa-sort-down"></i></button>
-                    </div>
-                    <div class="cartegory-right-top-item">
-                        <select name="" id="">
-                            <option value="">Sắp xếp</option>
-                            <option value="">Giá cao tới thấp</option>
-                            <option value="">Giá thấp đến cao</option>
-                        </select>
-                    </div>
-                    <div class="cartegory-right-content row">
-                        <div class="cartegory-right-content-item">
-                            <a href="product.html"><img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt=""></a>
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                        <div class="cartegory-right-content-item">
-                            <img src="img/ao-thun-local-brand-dep-mau-den-1.webp" alt="">
-                            <h1>Áo thun trơn</h1>
-                            <p>399.000<sup>đ</sup></p>
-                        </div>
-                    </div>
-                    <div class="cartegory-right-bottom row">
-                        <div class="cartegory-right-bottom-item">
-                            <button>&#171;</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button style="background-color: #333; color: #fff;">1</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button>2</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button>3</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button>4</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button>&#187;</button>
-                        </div>
-                        <div class="cartegory-right-bottom-item">
-                            <button>Trang cuối</button>
-                        </div>
-                    </div>
+                <div class="delivery-content-right">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Áo thun trơn</p>
+                                <p>S/Đen Trơn</p>
+                                <p>MSP1234
+                                    <span style="font-weight: 600;">399.000<sup>đ</sup></span>
+                                </p>
+                            </td>
+                            </td>
+                            <td>-30%</td>
+                            <td>1</td>
+                            <td>
+                                <p>299.000<sup>đ</sup></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="font-weight: bold;">Tổng</td>
+                            <td colspan="3" style="font-weight: bold;"><p>299.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="font-weight: bold;">Thuế VAT</td>
+                            <td colspan="3" style="font-weight: bold;"><p>29.000<sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="font-weight: bold;">Tổng tiền hàng</td>
+                            <td colspan="3" style="font-weight: bold;"><p>328.000<sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+
                 </div>
             </div>
         </div>

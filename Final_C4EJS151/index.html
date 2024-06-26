@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final_C4EJS151</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-container-content">
+        <div class="game-container-top">
+            <div class="game-container-top-img">
+                <img src="img/bau.png" alt="" id="resultImg1">
+            </div>
+            <div class="game-container-top-img">
+                <img src="img/bau.png" alt="" id="resultImg2">
+            </div>
+            <div class="game-container-top-img">
+                <img src="img/bau.png" alt="" id="resultImg3">
+            </div>
+        </div>
+        <div class="controls">
+            <button id="spinButton" onclick= spinWheel()>Quay</button>
+        </div>
+        <div class="bettingPanel">
+            <div class="betOption">
+                <img src="img/bau.png" alt="" onclick= placeBet(1)>
+                <p><span id="betPoints-img1">0</span></p>
+            </div>
+            <div class="betOption">
+                <img src="img/cua.png" alt= "" onclick= placeBet(2)>
+                <p><span id="betPoints-img2">0</span></p>
+            </div>
+            <div class="betOption">
+                <img src="img/ca.png" alt= "" onclick= placeBet(3)>
+                <p><span id="betPoints-img3">0</span></p>
+            </div>
+            <div class="betOption">
+                <img src="img/ga.png" alt=" " onclick= placeBet(4)>
+                <p><span id="betPoints-img4">0</span></p>
+            </div>
+            <div class="betOption">
+                <img src="img/huou.png" alt= "" onclick= placeBet(5)>
+                <p><span id="betPoints-img5">0</span></p>
+            </div>
+            <div class="betOption">
+                <img src="img/tom.png" alt= "" onclick= placeBet(6)>
+                <p><span id="betPoints-img6">0</span></p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="resetButton" onclick=resetBet()>Quay lai</button>
+        </div>
+        <p id="result" class="result"></p>
+
+    </div>
+</div>
+    
+</body>
+<script src="index.js">
+</script>
+</html>
